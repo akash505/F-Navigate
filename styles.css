@@ -1,0 +1,229 @@
+body {
+    background-color: #0d1b1e;
+    color: #d8c7c7;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+   
+}
+
+.container {
+    text-align: center;    
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    opacity: 80%;
+}
+
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+    width: 80%; /* Ensure form groups take full width */
+    background-color: #1c1b1b;
+    border-radius: 8px;
+    padding: 3px;
+    /* padding: -40px; */
+    
+   
+}
+
+label {
+    /* margin-bottom: 5px; */
+    padding-left: 10px;
+    font-size:small; 
+    color: #d8c7c7;/* Label color */
+    opacity: 50%;
+}
+
+
+
+select {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    /* appearance: none; */
+    background-color: #1c1b1b;
+    opacity: 80%;
+    color: #d8c7c7; /* Dropdown text color to match label */
+    width: 100%; /* Stretch dropdown to fill container */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00bfa6;
+    color: #d8c7c7;
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    /* align-items: ; */
+    gap: 10px;
+}
+.search-btn{
+    width: 20%;
+    justify-content: center;
+    
+
+}
+
+/*  */
+/* button#pro-filters-toggle {
+    background-color: #1c1b1b;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    width: 40%;
+    justify-content: center;
+} */
+
+/* button i {
+    transition: transform 0.3s ease;
+} */
+
+
+
+.results-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+   
+}
+
+.result-card {
+    background-color: #0b390c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    justify-content: center;       
+    text-align: center;
+    opacity: 80%;
+}
+
+.result-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.result-card h3, .result-card p {
+    margin-bottom: 15%; 
+    font-size: smaller;
+    
+}
+.result-card span{
+   font-weight:bold ;
+   font-size: x-large;
+   
+   
+}
+
+ /* Container for the toggle and text */
+ .toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    width: 50%;   
+    opacity: 90%;
+    background-color: #0e110e;
+    
+}
+
+/* Hide the checkbox */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Style the label as the toggle switch */
+.toggle-label {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 24px;
+    cursor: pointer;
+    
+}
+
+/* Style the knob inside the switch */
+.toggle-label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 2px;
+    top: -4px;
+    background-color: #666;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* Style for the checked state */
+.toggle-checkbox:checked + .toggle-label::before {
+    transform: translateX(26px);
+    background-color: #999;
+}
+
+/* Style for the text next to the toggle */
+.toggle-text {
+    margin-left: 10px;
+    color: rgb(211, 104, 16);
+    font-family: Arial, sans-serif;
+}
+
+@media (min-width: 600px) {
+    .form-group {
+        width: 80%;
+    }
+
+    .search-btn {
+        width: 20%;
+    }
+}
+
+@media (min-width: 768px) {
+    .form-group {
+        width: 60%;
+    }
+
+    .search-btn {
+        width: 40%;
+    }
+    .result-card {
+        max-width: 250px;
+    }
+}
+
+@media (min-width: 992px) {
+    .form-group {
+        width: 80%;
+    }
+
+    .search-btn {
+        width: 30%;
+    }  
+
+    .result-card {
+        max-width: 250px;
+    }
+}

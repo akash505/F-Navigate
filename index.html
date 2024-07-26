@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Choose Origin & Destination Airports:</h2>
+            <form id="flight-form">
+                <div class="form-group">
+                    <label for="origin">Origin</label>
+                    <select id="origin">
+                        <option value="SYD">SYD</option>
+                        <option value="JFK">JFK</option>
+                        <option value="DEL">DEL</option>
+                        <option value="BOM">BOM</option>
+                        <option value="BNE">BNE</option>
+                        <option value="BLR">BLR</option>
+                     
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="destination">Destination</label>                    
+                        <select id="destination">
+                            <option value="JFK">JFK</option>
+                            <option value="SYD">SYD</option>
+                            <option value="DEL">DEL</option>
+                            <option value="LHR">LHR</option>
+                            <option value="CDG">CDG</option>
+                            <option value="DOH">DOH</option>
+                            <option value="SIN">SIN</option>
+                           
+                        </select>
+                   
+                </div>
+
+                <div class="form-group">
+                    <label for="cabin">Cabin Selection</label>
+                    <select id="cabin">
+                        <option value="economy">Economy</option>
+                        <option value="business">Business</option>
+                        <option value="first">First</option>
+                    </select>
+                </div>
+                <div class="toggle-container">
+                    <input type="checkbox" id="toggle" class="toggle-checkbox">
+                    <label for="toggle" class="toggle-label"></label>Show
+                    <span class="toggle-text">Pro Filters</span>
+                </div>
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+
+        <div class="results-section">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
